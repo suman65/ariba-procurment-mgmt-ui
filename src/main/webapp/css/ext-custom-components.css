@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+/**
+*	@author rabindranath.s
+*/
+
+
+/* ---------------------------------------------------*/
+/* --------------->>> Grid <<<--------------*/
+/* ---------------------------------------------------*/
+.x-panel-header-default {
+    background-image: none;
+    background-color: #595986 !important;
+    top : 62px !important;
+}
+.x-custom-grid .x-grid-item {
+	background-color: #efefef;
+	top : 62px !important;
+	/* border-bottom : 1px solid #fff; */
+}
+
+.x-custom-grid .x-grid-item-alt {
+	background-color: #e0e0e0;
+	/* border-bottom : 1px solid #fff; */
+}
+
+.x-custom-grid .x-grid-item-focused .x-grid-cell-inner:before {
+	border: 0 none;
+}
+
+.x-custom-grid .x-grid-item-selected, .x-custom-grid .x-grid-with-row-lines .x-grid-item.x-grid-item-selected {
+	background-color: #c1ddf1;
+	color: black;
+}
+.x-custom-grid .x-grid-with-row-lines .x-grid-item.x-grid-item-over {
+	background-color: #e2eff8;
+	border-color: #e2eff8;
+}
+.x-custom-grid .x-grid-with-col-lines .x-grid-cell {
+	border-right: 1px solid #fff;
+}
+.x-custom-grid .x-column-header-over, .x-custom-grid .x-column-header-sort-ASC, .x-custom-grid .x-column-header-sort-DESC, .x-custom-grid .x-column-header-open {
+	background-color: #99B4D1;
+}
+
+/* ---------------------------------------------------*/
+/* --------------->>> Window <<<--------------*/
+/* ---------------------------------------------------*/
+
+
+.x-custom-window .x-toolbar-footer {
+	background-color: #FFFFFF;
+}

@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+/**
+ * @author rabindranath.s
+ */
+
+#homeBody {
+	margin: 0 auto;
+	position: relative;
+}
+.x-atp-home-change-password-icon {
+	background-image: url("../images/home/change_password.png");
+	background-size: 24px 24px;
+}
+.x-atp-home-signout-icon {
+	background-image: url("../images/home/signout.png");
+	background-size: 24px 24px;
+}
+
+
+.x-atp-username .x-form-display-field-default {
+	color: black;
+	font: 13px/17px helvetica,arial,verdana,sans-serif;
+	margin-top: 4px;
+	min-height: 24px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 94px;
+	font-weight: bold !important;
+	white-space : nowrap;
+	text-align: right;
+} 
+
+.x-atp-reports-toolbar {
+	background-color: #ddd3b8 !important
+}

@@ -1,0 +1,169 @@
+@CHARSET "UTF-8";
+
+/**
+*	@author rabindranath.s
+*	For Extjs Components Only
+*	Don't Override any main component color effect here
+*/
+
+/* Mask Cls*/
+
+.x-mask.x-border-box{
+	opacity: 0.8;
+	background: #000;
+}
+
+/* Fields are over padded from top so some characters like "_" are not visible */
+.x-form-text-default {
+	padding-top: 3px;
+}
+
+/** Fieldset title **/
+
+.x-fieldset-header-default > .x-fieldset-header-text {
+	color: maroon;
+	font: 13px/16px helvetica,arial,verdana,sans-serif;
+}
+
+.x-grid-row-summary .x-grid-cell, .x-grid-row-summary .x-grid-rowwrap, .x-grid-row-summary .x-grid-cell-rowbody {
+	font-weight: bold;
+}
+
+
+/**** home page css changes raviteja ****/
+
+.x-custom-mainmenu.x-toolbar-default{
+    background-color: #085282;
+    padding : 0;
+  //  height  : 52px;
+}
+
+/* .x-custom-mainmenu .x-box-menu-body-horizontal {
+    height  : 100%;
+} */
+
+.x-custom-tbseperator{
+
+}
+
+.x-custom-mainmenu .x-custom-button {
+    background-color: #085282;
+    background-image: none;
+    border:none;
+}
+
+.x-tab.x-tab-active.x-tab-default {
+	border-color: #427730;
+}
+
+.x-tab-default-left {
+	background-color: #427730;
+	border-color: #427730 !important;
+}
+
+/
+
+.x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+    color: #434343;
+}
+
+.x-tab.x-tab-active.x-tab-default {
+    background-color: #F68429 !important;
+}
+
+.x-tab-over.x-tab-default {
+  border-color: #427730;
+  background-color: #427730;
+}
+
+/* .x-ptab-grid-title {
+  background-color: #FFFFFF !important;
+  
+} */
+
+.x-tab-default-left.x-tab-focus.x-tab-active {
+    box-shadow: none;
+}
+
+
+
+.x-tab-over.x-tab-default-toolbar-large {
+  background-color: #ECE6D6 !important;
+}
+
+.x-btn.x-btn-menu-active.x-btn-default-toolbar-large, .x-btn.x-btn-pressed.x-btn-default-toolbar-large 
+{
+    background-color: #F6931B !important;
+    background-image: -moz-linear-gradient(center top , #F6931B, #F6931B, #F6931B, #F6931B) !important;
+}
+.x-btn-focus.x-btn-default-toolbar-large {
+  box-shadow : 0 1px 0 0 #F6931B inset, 0 -1px 0 0 #F6931B inset, -1px 0 0 0 #F6931B inset, 1px 0 0 0 #F6931B inset;
+}
+.x-btn-focus.x-btn-menu-active.x-btn-default-toolbar-large, .x-btn-focus.x-btn-pressed.x-btn-default-toolbar-large {
+  box-shadow : 0 1px 0 0 #F6931B inset, 0 -1px 0 0 #F6931B inset, -1px 0 0 0 #F6931B inset, 1px 0 0 0 #F6931B inset;
+}
+
+.x-btn-inner-default-toolbar-large {
+    color: #fff !important;
+    font: lighter 16px/20px helvetica,arial,verdana,sans-serif !important;
+}
+
+.x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+  color: #ffffff !important;
+}
+
+.x-ptab-tabPanel .x-tab-bar-plain {
+  background: #427730 !important;
+}
+
+.x-tab-default-left {
+    background-color: #427730;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: none;
+    border-left-width: medium;
+    border-top-style: none;
+    border-top-width: medium;
+}
+
+.x-tab-default {
+    border-bottom-color: #ffffff !important;
+    border-left: medium none;
+    border-right-color: #ffffff !important;
+    border-top: medium none;
+    cursor: pointer;
+}
+
+.x-tab-default-left {
+    background-color: #427730 !important;
+    border-radius: 3px 0 0 3px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 11px 12px 6px 5px !important;
+}
+
+.x-tab-wrap {
+    display: table-caption !important;
+    height: 100%;
+    left: 1px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.x-custom-mainmenu .x-custom-button.menubutton-active {
+	background-color: #F6931B !important;
+	background-image: none;
+}
+.x-custom-mainmenu .x-btn-default-toolbar-large {
+    border-radius : 4px;
+}
+.x-custom-mainmenu .x-custom-btn.x-btn-focus.x-btn-default-toolbar-medium {
+	box-shadow: 1px;
+}
+.x-custom-mainmenu .x-btn-focus.x-btn-over.x-btn-default-toolbar-large {
+  box-shadow :1px;
+}
+
+.x-atp-reportfilters {
+  border-radius : 0px;
+}

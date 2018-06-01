@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: local
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
+
+server:
+  port: 9999
+
+metering:
+  windowsPath: C:/Suman/Deployment-Dev2/baseUrlConfig.json
+  unixPath: /opt/amr-deployment/baseUrlConfig.json
+  
+
+
+remoteServer:
+  autURL: http://localhost:8092/auth

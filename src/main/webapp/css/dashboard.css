@@ -1,0 +1,124 @@
+@CHARSET "UTF-8";
+/**
+*	@author rabindranath.s
+*/
+.dashboard {
+	
+}
+
+.dashboard .x-panel-header-default {
+	background-color: #EAEAEA;
+}
+
+.dashboard .x-panel-header-title-default {
+	color: #434343;
+}
+
+.dashboard .section_1 {
+	
+}
+
+.dashboard .section_2 {
+	
+}
+
+.dashboard .section_1_1 {
+	
+}
+
+.dashboard .section_1_2 {
+	
+}
+
+.dashboard .section_1_1 .x-tab.x-tab-active.x-tab-default, .dashboard .section_1_2 .x-tab.x-tab-active.x-tab-default
+	{
+	background-color: #f68429;
+}
+
+.dashboard .section_1_1 .x-tab.x-tab-active.x-tab-default .x-tab-inner-default,
+	.dashboard .section_1_2 .x-tab.x-tab-active.x-tab-default .x-tab-inner-default
+	{
+	color: #fff !important;
+}
+
+.dashboard .section_1_1 .x-tab-default-top, .dashboard .section_1_2 .x-tab-default-top
+	{
+	background-color: #C9C9C9;
+}
+
+.dashboard .section_2 .x-panel-header .tab.x-btn-default-small {
+	background-color: #f68429;
+	background-image: none;
+	box-shadow: none;
+}
+
+.dashboard .x-btn-default-medium, .dashboard .x-btn.x-btn-menu-active.x-btn-default-medium,
+	.dashboard .x-btn.x-btn-pressed.x-btn-default-medium, .dashboard .x-btn-over.x-btn-default-medium,
+	.dashboard .x-btn-focus.x-btn-default-medium {
+	background-color: transparent;
+	background-image: none;
+	border: none;
+}
+
+.dashboard .x-btn-inner-default-medium {
+	color: #434343;
+}
+
+.dashboard .targetdemandchart .x-legend-item {
+	padding: 3px 4px 4px 20px;
+}
+
+.dashboard .targetdemandchart .x-legend-container {
+	cursor: pointer;
+}
+
+.dashboard .targetdemandchart .x-legend-item .x-legend-item-marker
+	{
+	left: 0.4em;
+	top: 0.4em;
+}
+
+.dashboard .dailysalesprogresschart .x-legend-item {
+	padding: 3px 4px 4px 20px;
+}
+
+.dashboard .dailysalesprogresschart .x-legend-container {
+	cursor: pointer;
+}
+
+.dashboard .dailysalesprogresschart .x-legend-item .x-legend-item-marker
+	{
+	left: 0.4em;
+	top: 0.4em;
+}
+
+.tbl-target-section-title {
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	padding-bottom: 8px;
+}
+
+.tbl-target-section-row {
+	padding-bottom: 3px;
+}
+
+.tbl-target-section-label {
+	font-weight: bold;
+	width: 80px;
+	display: table-cell;
+	position: relative;
+}
+
+.tbl-target-section-data {
+	display: table-cell;
+	position: relative;
+}
+
+.dashboard .filterIcon {
+	background-image: url("../images/filter.png");
+}
+
+.dashboard .excel {
+	background-image: url("../images/excel_24.png");
+}

@@ -1,0 +1,114 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #566777;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+		sans-serif;
+	font-size: 12px;
+}
+
+.container {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.login_bg {
+	width: 400px;
+	position: absolute;
+	height: 280px;
+	top: 30%;
+	left: 35%;
+	background-color: #f0f2ed;
+}
+
+.inlog_pd {
+	padding: 10px;
+}
+.logo {
+	background-repeat: no-repeat;
+    float: left;
+    padding: 10px;
+    height: 20px;
+    width: 19px;
+    background-size: 40px auto;
+}
+
+.login_he {
+	background-color: #005278;
+	height: 35px;
+	line-height: 16px;
+	text-align: center;
+	font-size: 22px;
+	color: #FFF;
+	padding: 10px;
+	
+}
+
+.text_filed {
+	width: 280px;
+	height: 25px;
+	 margin-top: 15px;
+	padding: 8px;
+	border: 1px solid #ccc;
+}
+
+.login_btn {
+	background-color: #005278;
+	border: none;
+	cursor: pointer;
+	padding: 10px 43px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFF;
+	margin-top: 25px;
+}
+
+.login_btn:hover {
+	background-color: #00CCFF;
+	box-shadow: #666 0px 4px 5px;
+	border: none;
+	cursor: pointer;
+	padding: 10px 43px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFF;
+	margin-top: 25px;
+}
+
+input[type='text'] {
+	background-image: url(../images/user.png);
+	background-position: 7px 7px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+}
+
+input[type='password'] {
+	background-image: url(../images/password.png);
+	background-position: 7px 7px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+}
+
+.alert
+{
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:12px; 
+	width:280px; 
+	margin-left:40px;
+	margin-top:5px;
+	color: #B22222;
+}
+
+.header {
+    height: 80px;
+    padding: 5px;
+    background-image: url(../images/PSPCL.jpg);
+    background-position: 7px 7px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+}
