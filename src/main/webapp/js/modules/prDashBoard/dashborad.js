@@ -144,7 +144,7 @@ var PR_DASHBOARD =
 			width : '100%'
 			,height : '100%'
 			,layout: 'hbox'
-			,border : 1
+			,border : false
 		    ,items : [
 		    			{
 		    				xtype : 'container',

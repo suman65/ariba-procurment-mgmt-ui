@@ -16,12 +16,12 @@ var PR =
 							,{	name: 'purchaseRequisitionNumber'								}
 							,{	name: 'vendor'													}
 							,{	name: 'accountType'												}
-							,{	name: 'glAccount'												}
 							,{	name: 'commodity'												}
 							,{	name: 'title'													}
 							,{	name: 'onBehalfOf'												}
 							,{	name: 'companyCode'												}
-							,{	name: 'costCenter'												}
+							,{	name: 'reason'													}
+							,{	name: 'status'													}
 						 ]
 					});
 		},
@@ -62,40 +62,34 @@ var PR =
 							,{	text : 'Title'					,dataIndex : 'title'						}
 							,{	text : 'On Behalf Of'			,dataIndex : 'onBehalfOf'					}
 							,{	text : 'Company Code'			,dataIndex : 'companyCode'					}
-							,{	text : 'Cost Center'			,dataIndex : 'costCenter'					}
+							,{	text : 'Status'					,dataIndex : 'status'						}
+							,{	text : 'Ariba Response'			,dataIndex : 'reason'						}
 							,{
 					            xtype:'actioncolumn',
 					            text : 'Action',
 					            align : 'center',
-					            width:100,
+					            width :100,
 					            items: [
 					            	{
-					            		iconCls: 'x-atp-add',
+					            		iconCls: 'x-tab-upload',
 					            		tooltip: 'Upload',
-					            		handler: function(grid, rowIndex, colIndex) {
-					                    var rec = grid.getStore().getAt(rowIndex);
+					            		handler: function(grid, rowIndex, colIndex) 
+					            		{
+					            			var rec = grid.getStore().getAt(rowIndex);
+					            			U.showAlert('Upload Confirmation','Do you want to upload to Ariba?');
+					                    
 					            		}
-					                },{xtype : 'tbspacer' , width :20},
+					                },{xtype : 'tbspacer' , width :30},
 					            	{
-					            		iconCls: 'x-atp-edit',
+					            		iconCls: 'x-tab-activate',
 					            		tooltip: 'Confirm',
-					            		handler: function(grid, rowIndex, colIndex) {
-					                    var rec = grid.getStore().getAt(rowIndex);
-					                }
+					            		handler: function(grid, rowIndex, colIndex) 
+					            		{
+					            			var rec = grid.getStore().getAt(rowIndex);
+					            			U.showAlert('Upload Confirmation','Do you want to Confirm?');
+					            		}
 					            }]
 					        }
-							/*,{
-						        xtype: 'actioncolumn',
-						        text : 'Action',
-						        width: 100,
-						        items: [{
-						            xtype: 'button',
-						            iconCls : 'x-atp-add',
-						            tooltip : 'Upload',
-						            text    : 'Upload',
-						            width   : 50
-						        }]
-							}*/
 						]
 						,listeners :
 						{
@@ -115,12 +109,10 @@ var PR =
 			
 			var win = Utilities.showWindow(
 			{
-				 //title	: 'Total No of Line Items for  PR # : ' + record.data.purchaseRequisitionNumber + " is  : "
 			     layout: 'fit'
 			    ,items	: me.getItemsGrid(record.data.id)
 			    ,header : {xtype :'header'	,titleAlign : 'center'	,cls:'x-atp-grid-title' }
 				,width  : '90%'
-				,id : 'lineWindow'
 				,listeners :
 				{
 					afterrender : function(this_)
@@ -128,7 +120,7 @@ var PR =
 						var grid = this.down('grid');
 						grid.store.on('load',function(store)
 						{
-							this_.setTitle('Total No of Line Items for  PR # : ' + record.data.purchaseRequisitionNumber + " is  : " + store.totalCount)
+							this_.setTitle('Total No of Line Items are  : ' + store.totalCount)
 						})
 					}
 				}
@@ -154,6 +146,8 @@ var PR =
 							,{	name: 'comments'										}
 							,{	name: 'supplierPartNumber'								}
 							,{	name: 'eccPlant'										}
+							,{	name: 'glAccount'										}
+							,{	name: 'costCenter'										}
 						 ]
 					});
 			return	 Ext.create('Ext.data.GridStore',
@@ -193,15 +187,12 @@ var PR =
 							,{	text : 'Need By Date'			,dataIndex : 'needByDate'					}
 							,{	text : 'Shipping Address'		,dataIndex : 'shippingAddress'				}
 							,{	text : 'Comments'				,dataIndex : 'comments'						}
-							,{	text : 'Supplier Part Number'   ,dataIndex : 'supplierPartNumber'			}
 							,{	text : 'ECC Plant'				,dataIndex : 'eccPlant'						}
+							,{	text : 'Cost Center'			,dataIndex : 'costCenter'					}
+							,{	text : 'GL Account'				,dataIndex : 'glAccount'					}
+							,{	text : 'Supplier Part Number'   ,dataIndex : 'supplierPartNumber'			}
 						]
 					});
-			/*prLineItemsGrid.store.on('load',function(store,records)
-			{
-				totalCount = store.getTotalCount();
-				console.log(totalCount);
-			})*/
 			return prLineItemsGrid;
 		}
 }

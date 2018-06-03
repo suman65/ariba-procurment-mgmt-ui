@@ -95,7 +95,7 @@ Ext.define('ATP.Utilities',
 				,modal		: true
 				,closable	: false
 				,icon		: icon ? icon : Ext.MessageBox.INFO
-				,buttons	: button? button : Ext.MessageBox.OK
+				,buttons	: button? button : Ext.MessageBox.YESNO
 				,fn			: fn ? fn : Ext.emptyFn
 				,animateTarget: animateTarget ? animateTarget : null
 			});

@@ -46,19 +46,19 @@
 
 }
 
+.x-custom-mainmenu.x-toolbar-default{
+    background-color: #000000;
+    padding : 0;
+}
+
 .x-custom-mainmenu .x-custom-button {
-    background-color: #085282;
+    background-color: #000000;
     background-image: none;
     border:none;
 }
 
 .x-tab.x-tab-active.x-tab-default {
-	border-color: #427730;
-}
-
-.x-tab-default-left {
-	background-color: #427730;
-	border-color: #427730 !important;
+	border-color: #62B816;
 }
 
 /

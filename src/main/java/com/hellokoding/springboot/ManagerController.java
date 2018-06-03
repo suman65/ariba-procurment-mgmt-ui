@@ -30,6 +30,10 @@ public class ManagerController
 	public String loginPage() {
 		return "login";
 	}
+	@RequestMapping(value = {"/home"}, method = RequestMethod.GET)
+	public String homePage() {
+		return "home";
+	}
 	@RequestMapping(value = "/home", method = RequestMethod.POST)
 	public String homePage(HttpServletRequest request, HttpServletResponse response) 
 	{

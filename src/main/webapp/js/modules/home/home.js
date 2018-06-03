@@ -6,7 +6,7 @@ var HOME = {
 	,activeScreenId: null
 	,generateToolBar: function()
 	{
-		var me = this, toolbarItems = [{xtype: 'image', /*src: './images/home/sap_ariba.jpg',*/ width: 145, height: '100%'}];
+		var me = this, toolbarItems = [];
 
 		var menus = me.getMenus();
 		for (var index = 0; index < menus.length; index++) 
@@ -271,7 +271,7 @@ var HOME = {
 		menuId = me.getActiveMenuId();
 
 		viewport = Ext.ComponentQuery.query('viewport')[0];
-		toolbar = viewport.down('toolbar[region=north]', 1);
+		toolbar = viewport.down('toolbar#toolbarId', 1);
 		menu = toolbar.down('button[menuId=' + menuId + ']');
 		if (menu && !menu.disabled)
 		{

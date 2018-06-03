@@ -40,8 +40,8 @@
 	background-image: url("../images/bank.png") !important;
 }
 
-.x-tab-season {
-	background-image: url("../images/season.png") !important;
+.x-tab-upload {
+	background-image: url("../images/upload.png") !important;
 }
 
 .x-print-action-icon {
@@ -449,4 +449,10 @@ table.purchaseIntention tr.highlightInvalidComparision {
 }
 .x-panel-default-outer-border-trbl {
    
+}
+.x-action-col-icon {
+    height: 21px;
+    width: 22px;
+    cursor: pointer;
+    background-repeat: no-repeat;
 }
